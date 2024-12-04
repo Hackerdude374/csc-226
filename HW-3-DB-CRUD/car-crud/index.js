@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const { Pool } = require("pg");
 
 const app = express();
-const port = 3000;
+const port = 4000;
 
 // Middleware
 app.use(bodyParser.json());
@@ -13,13 +13,16 @@ const pool = new Pool({
     user: "postgres",
     host: "localhost",
     database: "csc226carsdb", // Updated to the new database name
-    password: "mypassword", // Replace with your PostgreSQL password
+    password: "postgres", // Replace with your PostgreSQL password
     port: 5432,
   });
   
 
 // Routes
-
+app.get("/", (req, res) => {
+    res.send("Welcome to the server!");
+  });
+  
 // CREATE: Add a new car
 app.post("/cars", async (req, res) => {
   const { make, model, year } = req.body;
