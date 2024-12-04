@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Animal - Cats</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, skyblue, lightblue);
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: navy;
+            margin-top: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px auto;
+            width: 70%;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: white;
+            color: navy;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        ul li:hover {
+            transform: scale(1.1);
+            background-color: #f0f8ff;
+        }
+
+        img {
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: navy;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid navy;
+            padding: 8px 12px;
+            border-radius: 5px;
+            background: white;
+            transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        a:hover {
+            background: navy;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+    <h1>The Best Animal in the World: Cats</h1>
+    <p>
+        Cats are elegant, curious, and playful animals that bring joy and relaxation to any home. 
+        Their independent nature and unique personalities make them fascinating companions. 
+        Whether they are chasing a toy or napping in the sunlight, cats have a way of making life more enjoyable.
+    </p>
+    <ul>
+        <li>Cats are incredibly agile and can jump up to six times their body length.</li>
+        <li>They have excellent night vision, which makes them great hunters in low light.</li>
+        <li>Cats purr not only when they are happy but also to calm themselves when stressed.</li>
+    </ul>
+    <img src="data:image/webp;base64,UklGRkwHAABXRUJQVlA4IEAHAACQKACdASqCAHcAPqU2qVSmLyYmEjHgFIllAMwU1b2zRVlccHFxUN11gtbnj/Au8hmb0LlY4RFGsJwDdBTcNLsZuL/m8iYNKVd4Ygx+aZkos0XmZ1AA0+E79xkFN2Jt5hbMbK1AfcJ9BP6tqPssQQk4Bxr1y0LAgO0QGD9JJvhsIIpmIj/0gZf5j++2SHjQR2RP2MIDE8KbFfUFTkChgwegy2XJVnCoVK++pTbkOYtsO1KXHz/zzO4zvjDxLN+o3yTErQ4lLnnDFfvWBxhVOvkJCaeF8WhUL9CP//EGZp+Qa7PqREgPETs9765/pmh8kEXyvEDmvRSI+J+iPWGf3Yjadqc0uw0LRXdRNQm6U4pB7pVXPrg2f+grqXSShj/8roCdvlDiXRWLil0fBDkgt0QvZmWBpuzWd3NWALa1K65+hEQJlaj15WZOpvf5+OAA/vobczxPpepB8f6jQPpE9nH/BbfNH4oeiTxNaLZW+GlyAcFxx392L+YFJT/alYNTPsy3aFMW2OuiuhsBBHBAE2Ci5ZAZoRYvcA11BfZxWbqlt+Ax+NDqzIDt+OGGlJLFOiztPPQiRwILDaGQEL6+wvJNyZ/Vzw1bf3oQokHIo6nnRBzysRzrvRIjGu4UpuUog7LRiy/t7Ny3AC7J72F5u7qAXwIQUyi4B8yRJEd4S4uaJLjcSSLwjeYZvAyMWW5dJK6HEFHfw7q6iGDxPmTgQonwiRewYb2UnCBDKNzU9SxGKn0uId/Sa1E8eQzYJW22NULt3r2wbY10o0e+EeIbTGW4aFBL61Nceg3AHaVBhBZx6zswxneGf7QwGA44cdYDx01ZJkYMt5aw17lJB2h7xsqBTbSVpudODA0cIngkhJCAnxr8ezeovb818nZO+sPL/2NKexCqbD4W8RT4D46eM5+GT2UN5Ni/nNokmRqrCx1jJ8fkY3wnwbbK6JuR3pEIB9iH8nWQLEnLacajlfsNaKpzQByX7iwRMcA8vCBfHJavV7mil0hbj0rMgmbXc5grNazu0r5RgdrAqNlIYcycGiz8fCFlNr+k9+qmYy8sF9WUuEhcZ0q7s3FJL0+o5ZfJmc5rGeNMsNEtZzZV+1e7nLE0F208EbMcNIW8td/ap2Vb8bX1o5Tyuw0zMW13OJ8davN07rNCxKosx0oFd9B/ERlp3uO9CaK/ZTtGfr788mx0NoPJhsS4ibeq732a8ZgrEeVWnSFt3TL+D8uoxlBvVOLRy9WLQItp2LnfNr+7Pr5M1uKNbvK0CJNdBzOWYBdHz1sN1wY3yGFrpmXdqBUD7+Z3aQ54mvl26FHQAUeJE28wBv7w/mJietBWTkZoAqerIrVYXVBkspL0TQnmu2PwxHhLPwWQTvpzZ4i0qwqPcTIIZfu41Qiz3gP3MEBol7Tx68xfSdq4bEqyZLXdM0Z5TVY5mG73ub25GtEJTzYELeI4OYUpEBFLDwCFctcZ3I8/SyKh6CEGqNGqTG66cUG5OhhxzSvNlzWAiMbYtXb3x5JC/CFNwWsLpW5iIwtjpBxQZ322aFQHrQDP1vCtVE3+aTXewxAoJzSAijOqK0A7SdhzOsC1IHxqnMc0VfOjr4Is659JNM8nHGummMHyJO9uKlcd6Gr6vyLVmhEdwlnMlMU1umq5ZYA8PADu7TMa+39oLHyngmWwGnjvYkJfAGdm6uKTnGMQqzi25iI1OcFpmYUuH3jiA+wtOzBEqjnOnrHeKESVxHSQT8Aqj1aTU2/6qE8DFdpQQUTHDdVhtSa1Br0Tg+XON9HuW9yvFpB1qHwdFcoAswJwtngT+bgiDRxr1hsABuigfIXew3CqrpWr5hjXQxjQRyTt/uTe/b+6yucLMJOXYR1J8TcsOiNHbtX+HY86L5CrXqCQ9gII2bD3p3Hww0T27UOJ5n8vIY0WnWnBTngs423Tt367cvMXDJStCVYj/SM6eCZPUat65G3L+MSZpByleq28riX3foZN/5lordVldVgzol6uXLUz/z/sEpS+KrJwllPB8LEB80eijUnxqOLf1vJRjOFPD8+aJhGNn9T+taf04vSuxQs/rjxJT+ioWjmxJdtFLpA7MK6YeMtnjsIyoqz0KssKM56DdgV+LY1npAKUh3lJcOpr2+D7MxYsFzBCzyZqvVvu6JrDKOE55warQY7rNcdnZkCucA8jEJQsiHTztDSk4R5EriFyyp9o2OGUEthql3S5nqPwmef6jd6DoQpUWvdMJUWMVUHc45hEF4ovPp0WVxR2h9xaXnbepCizd9/C+nQNBKGAkzTvITtDtYN7NKAmWV567M8ERc522yHa7kcBxM10rUg2abA0Un+c9aQVpxEkOqCx31a1++vD3/zQuvYJz6cW5pm0sMhQ0LCrTcERHOUZBK9HVBudxdddW95ATv6WkQSHE1Xzcv+avOx5tuASKy3QlN2LvhdC5s7teMEAm0+qr83AbtRUQJwHtmKAJxvkCWfeOAAAAA==" alt="Image of a cat" width="300">
+    <p>
+        <a href="https://www.aspca.org/pet-care/cat-care" target="_blank">
+            Learn more about cats.
+        </a>
+    </p>
+</body>
+</html>
